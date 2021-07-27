@@ -1,0 +1,40 @@
+/*************************************************************
+Names: Reymond Pamelar & Tyler Nguyen
+RedID:  820154914  & 821450728
+usernames:Cssc3703  & CSSC 3761
+CS 530 Spring 2021
+Project: CS 530 Assignment #2 Linker Editor
+Name of file: README
+*************************************************************/
+LIST OF FILES:
+
+led.cpp
+README
+SoftwareDesignDocument.pdf
+makefile
+TestSample.lis
+Test2Sample.lis
+
+COMPILE INSTRUCTIONS
+While within the a2 directory, use the command: "make"
+
+OPERATION INSTRUCTIONS
+The following command can be executed within the a2 directory:
+
+	./led led <filename>.lis
+
+*NOTE: Multiple ".lis" files can be inputted at once
+
+LIST/DESCRIPTION OF NOVEL/SIGNIFICANT DESIGN DECISIONS
+	- The file is parsed line by line into a structure with each containing its own fields.
+	- Bit masking to check flags
+	- Expressions are fully evaluated to find correct memory references
+
+LIST/DESCRIPTION OF ALL KNOWN DEFICIENCIES OR BUGS
+N/A
+
+LESSONS LEARNED
+Dissected each component of obj files
+Continuous updates of delegated tasks
+Understanding external symbol tables (ESTAB)
+Learned memory mapping of files  

@@ -1,0 +1,19 @@
+.Reymond Pamelar, Tyler Nguyen
+.cssc3703, cssc3761
+.CS 530, Spring 2021
+.Assignment #2, XE Link-Editor
+.Test2Sample.lis
+0000    PROGB     START    0
+0000              EXTDEF   LISTB,ENDB
+0000              EXTREF   LISTA,ENDA,LISTC,ENDC
+0036    REF1     +LDA      LISTA                       03100000
+003A    REF2      LDT      LISTB+4                     772027
+003D    REF3     +LDX     #ENDA-LISTA                  05100000
+0060    LISTB     EQU      *
+0070    ENDB      EQU      *
+0070    REF4      WORD     ENDA-LISTA+LISTC            000000
+0073    REF5      WORD     ENDC-LISTC-10               FFFFF6
+0076    REF6      WORD     ENDC-LISTC+LISTA-1          FFFFFF
+0079    REF7      WORD     ENDA-LISTA-(ENDB-LISTB)     FFFFF0
+007C    REF8      WORD     LISTB-LISTA                 000060
+007C              END
